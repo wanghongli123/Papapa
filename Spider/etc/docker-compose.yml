@@ -1,0 +1,30 @@
+version: '2.1'
+
+services:
+    python:
+        build: python
+        links:
+            - "mongodb"
+            - "redis-server"
+        volumes:
+            - "../source:/var/Spider"
+
+    redis-server:
+        image: redis:3.0
+
+    mongodb:
+        image: mongo:3.2
+        ports:
+            - "27017:27017"
+        volumes:
+            - ./data/db/mongo:/data/db
+
+    rockmongo:
+        build:
+            context: "rockmongo"
+            args:
+                - CONFIG_FILE=config.php
+        links:
+            - "mongodb"
+        ports:
+            - "8088:80"

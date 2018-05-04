@@ -1,8 +1,8 @@
 ## 爬虫框架使用说明
 ### 1.准备
 #### 1.1 Mac OS 必备环境
-#####a.请下载安装 Docker 软件，链接如下，https://www.docker.com/docker-mac，免费好用，值得拥有.
-#####b.安装好后，请确保 Docker 处于运行状态.
+##### a.请下载安装 Docker 软件，链接如下，https://www.docker.com/docker-mac，免费好用，值得拥有.
+##### b.安装好后，请确保 Docker 处于运行状态.
 
 ### 1.2 Linux 必备环境
 ##### a.CentOS 7.x 安装 Docker-compose 指南：https://blog.csdn.net/JOJOY_tester/article/details/79182216
